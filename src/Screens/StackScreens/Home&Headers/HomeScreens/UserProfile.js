@@ -161,7 +161,7 @@ const UserProfile = ({route}) => {
 
            <TouchableOpacity onPress={()=> navigation.navigate('Edit my profile', { Id: post.user.id, post })} disabled={verifiedProfile} >
            <View style={[styles.detailItem,{borderBottomWidth:1, borderBottomColor:'gray', paddingBottom:10,}]}>
-           <Ionicons name="md-person-sharp" size={24} color="white" style={{backgroundColor:'#E0D26A', borderRadius:4, padding:3, marginRight:8}}/>
+           <Ionicons name="person-sharp" size={24} color="white" style={{backgroundColor:'#E0D26A', borderRadius:4, padding:3, marginRight:8}}/>
            <Text style={[styles.itemsText,{color:activeColors.TextColor}]}>Profile</Text>
            {verifiedProfile ? (
            <Text style={ {marginLeft:'auto', color:'#1DB954', fontSize:16, fontWeight:'bold'}}>Completed</Text>

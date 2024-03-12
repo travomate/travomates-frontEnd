@@ -21,7 +21,8 @@ import { useNavigation } from "@react-navigation/native";
 import { colors } from "../../Config/theme/colors";
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import {Website_URL, privacy_URL,terms_conditions_URL,faq_URL} from '@env' 
+import {privacy_URL,terms_conditions_URL,faq_URL} from '@env'
+
 
 const Account = () => {
   // theme colors
@@ -383,8 +384,8 @@ const Account = () => {
                     <Ionicons
                       name={
                         selectedLanguage === "English"
-                          ? "ios-radio-button-on"
-                          : "ios-radio-button-off"
+                          ? "radio-button-on"
+                          : "radio-button-off"
                       }
                       size={24}
                       color={selectedLanguage === "English" ? "blue" : "gray"}
@@ -403,8 +404,8 @@ const Account = () => {
                     <Ionicons
                       name={
                         selectedLanguage === "French"
-                          ? "ios-radio-button-on"
-                          : "ios-radio-button-off"
+                          ? "radio-button-on"
+                          : "radio-button-off"
                       }
                       size={24}
                       color={selectedLanguage === "French" ? "blue" : "gray"}
@@ -468,8 +469,8 @@ const Account = () => {
                     <Ionicons
                       name={
                         selectedTheme === "Light"
-                          ? "ios-radio-button-on"
-                          : "ios-radio-button-off"
+                          ? "radio-button-on"
+                          : "radio-button-off"
                       }
                       size={24}
                       color={selectedTheme === "Light" ? "blue" : "gray"}
@@ -488,8 +489,8 @@ const Account = () => {
                     <Ionicons
                       name={
                         selectedTheme === "Dark"
-                          ? "ios-radio-button-on"
-                          : "ios-radio-button-off"
+                          ? "radio-button-on"
+                          : "radio-button-off"
                       }
                       size={24}
                       color={selectedTheme === "Dark" ? "blue" : "gray"}

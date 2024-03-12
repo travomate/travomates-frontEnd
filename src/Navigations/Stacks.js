@@ -119,7 +119,7 @@ function MyTabs() {
     tabBarIcon: ({focused}) => focused ? (
       <MaterialIcons name="notifications" size={27} color="#dc661f" />
       ):(
-        <Ionicons name="ios-notifications-outline" size={27} color={activeColors.TextColor} />
+        <Ionicons name="notifications-circle-outline" size={27} color={activeColors.TextColor} />
       )
     }}
        />
@@ -130,9 +130,9 @@ function MyTabs() {
         headerShown: false,
       tabBarLabel: 'Profile',
     tabBarIcon: ({focused}) => focused ? (
-      <Ionicons name="ios-person-circle" size={27} color="#dc661f" />
+      <Ionicons name="person-circle" size={27} color="#dc661f" />
       ):(
-        <Ionicons name="ios-person-circle-outline" size={27} color={activeColors.TextColor} />
+        <Ionicons name="person-circle-outline" size={27} color={activeColors.TextColor} />
       )
     }}
        />
