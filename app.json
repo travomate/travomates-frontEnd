@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "TravoMate app",
+    "name": "TravoMate-app",
     "slug": "TravoMate-app",
-    "description":"this app is still under construction, just in case some of functions are not working properly",
-    "version": "1.0.0",
+    "description": "this app is still under construction, just in case some of functions are not working properly",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/travomateLogOG.png",
     "userInterfaceStyle": "light",
@@ -17,13 +17,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.travomate.TravoMateapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/travomateLogOG.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.travomate.TravoMateapp"
     },
     "web": {
       "favicon": "./assets/travomateLogOG.png"
@@ -34,7 +39,24 @@
         {
           "photosPermission": "The app accesses your photos to let you share them with your friends."
         }
+      ],
+      [
+        "expo-updates",
+        {
+          "username": "travomate"
+        }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "326a065a-2f92-4713-b00a-61693d51d94c"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/326a065a-2f92-4713-b00a-61693d51d94c"
+    }
   }
 }

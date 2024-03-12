@@ -180,7 +180,7 @@ const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
             <TouchableOpacity onPress={() => selectGender('Male')}>
               <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Ionicons
-                  name={gender === 'Male' ? 'ios-radio-button-on' : 'ios-radio-button-off'}
+                  name={gender === 'Male' ? 'radio-button-on' : 'radio-button-off'}
                   size={24}
                   color={gender === 'Male' ? 'blue' : 'gray'}
                 />
@@ -190,7 +190,7 @@ const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
             <TouchableOpacity onPress={() => selectGender('Female')}>
               <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 10 }}>
                 <Ionicons
-                  name={gender === 'Female' ? 'ios-radio-button-on' : 'ios-radio-button-off'}
+                  name={gender === 'Female' ? 'radio-button-on' : 'radio-button-off'}
                   size={24}
                   color={gender === 'Female' ? 'blue' : 'gray'}
                 />
